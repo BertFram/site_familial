@@ -64,9 +64,9 @@
     margin: 0px 67px; /* Hide the enlarged image container by default */
   }
   .enlargedImgContent {
-    width: 1000px; /* Set the width of the enlarged picture */
+    width: 1148px; /* Set the width of the enlarged picture */
     height: 1000px; /* Set the height of the enlarged picture */
-    object-fit: cover; /* Ensure the entire image is visible within the thumbnail dimensions */
+    object-fit: contain; /* Ensure the entire image is visible within the thumbnail dimensions */
   }
   -->
 </style>
@@ -137,7 +137,7 @@ NOTRE SITE FAMILIAL&nbsp; : www.frammery.com
     const enlargedImgContainer = document.getElementById('enlargedImg');
     const enlargedImgContent = document.getElementById('enlargedImgContent');
     let currentPage = 1;
-    const imagesPerPage = 48;
+    const imagesPerPage = 8;
 
     // Function to update displayed images based on the current page
     const updateDisplayedImages = (data) => {
@@ -172,7 +172,7 @@ NOTRE SITE FAMILIAL&nbsp; : www.frammery.com
       }
     };
 
-    fetch('maxi/photos.json') // Replace with the actual path to your JSON file
+    fetch('maxi1/photos.json') // Replace with the actual path to your JSON file
       .then(response => response.json())
       .then(data => {
         updateDisplayedImages(data); // Initial display of images

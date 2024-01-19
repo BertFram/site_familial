@@ -2,6 +2,77 @@ const fs = require('fs');
 const path = require('path');
 
 const paths = [
+  
+  {
+    folderPath: 'dist/Voyages/Tanzanie2011/maxi/',
+    jsonFilePath: 'dist/Voyages/Tanzanie2011/maxi/photos.json',
+    filename: '/Voyages/Tanzanie2011/maxi/'
+  },
+  {
+    folderPath: 'dist/Voyages/RajaAmpat2014/maxi/',
+    jsonFilePath: 'dist/Voyages/RajaAmpat2014/maxi/photos.json',
+    filename: '/Voyages/RajaAmpat2014/maxi/'
+  },
+  {
+    folderPath: 'dist/Voyages/Nianing2014/maxi/',
+    jsonFilePath: 'dist/Voyages/Nianing2014/maxi/photos.json',
+    filename: '/Voyages/Nianing2014/maxi/'
+  },
+  {
+    folderPath: 'dist/Voyages/Palau2015/maxi1/',
+    jsonFilePath: 'dist/Voyages/Palau2015/maxi1/photos.json',
+    filename: '/Voyages/Palau2015/maxi1/'
+  },
+  {
+    folderPath: 'dist/Voyages/Palau2015/maxi2/',
+    jsonFilePath: 'dist/Voyages/Palau2015/maxi2/photos.json',
+    filename: '/Voyages/Palau2015/maxi2/'
+  },
+  {
+    folderPath: 'dist/Voyages/Oman2016/maxi1/',
+    jsonFilePath: 'dist/Voyages/Oman2016/maxi1/photos.json',
+    filename: '/Voyages/Oman2016/maxi1/'
+  },
+  {
+    folderPath: 'dist/Voyages/Oman2016/maxi2/',
+    jsonFilePath: 'dist/Voyages/Oman2016/maxi2/photos.json',
+    filename: '/Voyages/Oman2016/maxi2/'
+  },
+  {
+    folderPath: 'dist/Voyages/Oman2016/maxi3/',
+    jsonFilePath: 'dist/Voyages/Oman2016/maxi3/photos.json',
+    filename: '/Voyages/Oman2016/maxi3/'
+  },
+  {
+    folderPath: 'dist/Voyages/Oman2016/maxi4/',
+    jsonFilePath: 'dist/Voyages/Oman2016/maxi4/photos.json',
+    filename: '/Voyages/Oman2016/maxi4/'
+  },
+  {
+    folderPath: 'dist/Voyages/Oman2016/maxi5/',
+    jsonFilePath: 'dist/Voyages/Oman2016/maxi5/photos.json',
+    filename: '/Voyages/Oman2016/maxi5/'
+  },
+  {
+    folderPath: 'dist/Voyages/Senegal2023/maxi/',
+    jsonFilePath: 'dist/Voyages/Senegal2023/maxi/photos.json',
+    filename: '/Voyages/Senegal2023/maxi/'
+  },
+  {
+    folderPath: 'dist/Voyages/Maldives2010/maxi1/',
+    jsonFilePath: 'dist/Voyages/Maldives2010/maxi1/photos.json',
+    filename: '/Voyages/Maldives2010/maxi1/'
+  },
+  {
+    folderPath: 'dist/Voyages/Maldives2010/maxi2/',
+    jsonFilePath: 'dist/Voyages/Maldives2010/maxi2/photos.json',
+    filename: '/Voyages/Maldives2010/maxi2/'
+  },
+  {
+    folderPath: 'dist/Voyages/Maldives2010/maxi3/',
+    jsonFilePath: 'dist/Voyages/Maldives2010/maxi3/photos.json',
+    filename: '/Voyages/Maldives2010/maxi3/'
+  },
   {
     folderPath: 'dist/Voyages/Jordanie2016/maxi1/',
     jsonFilePath: 'dist/Voyages/Jordanie2016/maxi1/photos.json',
