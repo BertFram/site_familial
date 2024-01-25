@@ -4,6 +4,26 @@ const path = require('path');
 const paths = [
   
   {
+    folderPath: 'dist/Voyages/USA2008/maxi1/',
+    jsonFilePath: 'dist/Voyages/USA2008/maxi1/photos.json',
+    filename: '/Voyages/USA2008/maxi1/'
+  },
+  {
+    folderPath: 'dist/Voyages/USA2008/maxi2/',
+    jsonFilePath: 'dist/Voyages/USA2008/maxi2/photos.json',
+    filename: '/Voyages/USA2008/maxi2/'
+  },
+  {
+    folderPath: 'dist/Voyages/USA2008/maxi3/',
+    jsonFilePath: 'dist/Voyages/USA2008/maxi3/photos.json',
+    filename: '/Voyages/USA2008/maxi3/'
+  },
+  {
+    folderPath: 'dist/Voyages/USA2008/maxi4/',
+    jsonFilePath: 'dist/Voyages/USA2008/maxi4/photos.json',
+    filename: '/Voyages/USA2008/maxi4/'
+  },
+  {
     folderPath: 'dist/Voyages/Nianing2008/maxi/',
     jsonFilePath: 'dist/Voyages/Nianing2008/maxi/photos.json',
     filename: '/Voyages/Nianing2008/maxi/'
