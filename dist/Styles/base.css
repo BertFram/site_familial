@@ -13,13 +13,23 @@ html {
 	font-size: 100%; /* Voir -> Note 1 à la fin de la feuille de styles. */
 }
 body {
-	margin: 0;
-	padding: 10px 20px; /* Note -> 2 */
-	font-family: Verdana, "Bitstream Vera Sans", "Lucida Grande", sans-serif; /* 3 */
-	font-size: 0.8em; /* -> 4 */
-	line-height: 1.25; /* -> 5 */
-	color: black;
-	background: white;
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	background-color: #5c34fc;
+}
+.oneColElsCtr #container {
+	width: 72em;
+	background-color: #3300FF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}
+.oneColElsCtr #mainContent {
+	padding: 0 0px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
 }
 
 /* Titres */
