@@ -70,7 +70,15 @@
         <tr>
           <td>
             <div id="enlargedImg">
-              <img id="enlargedImgContent" src="" alt="Enlarged Image" class="enlargedImgContent">
+              <div id="enlargedPreviousButtonContainer" class="thumbnailButtonContainer">
+                <button id="enlargedPreviousButton" class="thumbnailButton">&lt;</button>
+              </div>
+              <div id="enlargedImgContainer" class="enlargedImgContainer">
+                <img id="enlargedImgContent" src="" alt="Enlarged Image" class="enlargedImgContent">
+              </div>
+              <div id="enlargedNextButtonContainer" class="thumbnailButtonContainer">
+                <button id="enlargedNextButton" class="thumbnailButton">&gt;</button>
+              </div>
             </div>
             <div id="thumbnails" class="thumbnails"></div>
             <script>
@@ -79,7 +87,20 @@
               const enlargedImgContent = document.getElementById('enlargedImgContent');
               let currentPage = 1;
               let maxPage = 0;
+              let currentImage = -1;
+              let maxImage = -1;
               const imagesPerPage = 8;
+
+              const updateButtonsVisibility = () => {
+                const previousButtonContainer = document.getElementById('previousButtonContainer');
+                const nextButtonContainer = document.getElementById('nextButtonContainer');
+                const enlargedPreviousButtonContainer = document.getElementById('enlargedPreviousButtonContainer');
+                const enlargedNextButtonContainer = document.getElementById('enlargedNextButtonContainer');
+                previousButtonContainer.style.opacity = currentPage > 1 ? 1 : 0;
+                nextButtonContainer.style.opacity = currentPage < maxPage ? 1 : 0;
+                enlargedPreviousButtonContainer.style.opacity = currentImage > 0 ? 1 : 0;
+                enlargedNextButtonContainer.style.opacity = currentImage < maxImage - 1 ? 1 : 0;
+              }
 
               // Function to update displayed images based on the current page
               const updateDisplayedImages = (data) => {
@@ -98,7 +119,14 @@
                   img.classList.add('thumbnail');
                   img.addEventListener('click', function () {
                     enlargedImgContent.src = this.src;
-                    enlargedImgContainer.style.display = 'block';
+                    enlargedImgContainer.style.display = 'flex';
+                    for (var i = 0; i < data.images.length; i++) {
+                      if (data.images[i].filename == image.filename) {
+                        currentImage = i;
+                        break;
+                      }
+                    }
+                    updateButtonsVisibility();
                   });
                   const thumbnailContainer = document.createElement('div');
                   thumbnailContainer.className = "thumbnailContainer";
@@ -107,14 +135,38 @@
                 });
               };
 
+              // Function to handle next image action
+              const nextImage = (data) => {
+                if (currentImage < maxImage - 1) {
+                  currentImage++;
+                  enlargedImgContent.src = data.images[currentImage].filename;
+                  if (currentPage != data.images[currentImage].page) {
+                    nextPage(data);
+                  }
+                  updateButtonsVisibility();
+                }
+              };
+
+              // Function to handle previous image action
+              const previousImage = (data) => {
+                if (currentImage > 0) {
+                  currentImage--;
+                  enlargedImgContent.src = data.images[currentImage].filename;
+                  enlargedImgContainer.style.display = 'flex';
+                  if (currentPage != data.images[currentImage].page) {
+                    previousPage(data);
+                  }
+                  updateButtonsVisibility();
+                }
+              };
+
               // Function to handle next page action
               const nextPage = (data) => {
-                currentPage++;
-                updateDisplayedImages(data);
-                const previousButtonContainer = document.getElementById('previousButtonContainer');
-                const nextButtonContainer = document.getElementById('nextButtonContainer');
-                previousButtonContainer.style.display = currentPage > 1 ? "block" : "none";
-                nextButtonContainer.style.display = currentPage < maxPage ? "block" : "none";
+                if (currentPage < maxPage) {
+                  currentPage++;
+                  updateDisplayedImages(data);
+                  updateButtonsVisibility();
+                }
               };
 
               // Function to handle previous page action
@@ -122,10 +174,7 @@
                 if (currentPage > 1) {
                   currentPage--;
                   updateDisplayedImages(data);
-                  const previousButtonContainer = document.getElementById('previousButtonContainer');
-                  const nextButtonContainer = document.getElementById('nextButtonContainer');
-                  previousButtonContainer.style.display = currentPage > 1 ? "block" : "none";
-                  nextButtonContainer.style.display = currentPage < maxPage ? "block" : "none";
+                  updateButtonsVisibility();
                 }
               };
 
@@ -137,8 +186,19 @@
                       maxPage = img.page;
                     }
                   });
+                  maxImage = data.images.length;
                   
                   updateDisplayedImages(data); // Initial display of images
+
+                  // Handle next and previous image clicks
+                  const previousImageButton = document.getElementById('enlargedPreviousButton');
+                  const nextImageButton = document.getElementById('enlargedNextButton');
+                  previousImageButton.addEventListener('click', () => {
+                    previousImage(data);
+                  });
+                  nextImageButton.addEventListener('click', () => {
+                    nextImage(data);
+                  });
 
                   // Add previous button
                   const previousButton = document.createElement('button');
@@ -153,7 +213,7 @@
                   });
                   previousButtonContainer.appendChild(previousButton);
                   thumbnailsContainer.insertBefore(previousButtonContainer, thumbnailsContainer.firstChild);
-                  previousButtonContainer.style.display = currentPage > 1 ? "block" : "none";
+                  previousButtonContainer.style.opacity = currentPage > 1 ? 1 : 0;
                   
                   // Add next previous button
                   const nextButton = document.createElement(tagName = 'button');
@@ -168,7 +228,7 @@
                   });
                   nextButtonContainer.appendChild(nextButton);
                   thumbnailsContainer.appendChild(nextButtonContainer);
-                  nextButtonContainer.style.display = currentPage < maxPage ? "block" : "none";
+                  nextButtonContainer.style.opacity = currentPage < maxPage ? 1 : 0;
                 })
                 .catch(error => console.error('Error fetching images:', error))
             </script>
