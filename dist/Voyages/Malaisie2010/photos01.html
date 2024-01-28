@@ -72,23 +72,26 @@
             <div id="enlargedImg">
               <img id="enlargedImgContent" src="" alt="Enlarged Image" class="enlargedImgContent">
             </div>
-            <div id="thumbnails"></div>
-            <div id="buttonControls"></div>
+            <div id="thumbnails" class="thumbnails"></div>
             <script>
-              const buttonControls = document.getElementById('buttonControls');
               const thumbnailsContainer = document.getElementById('thumbnails');
               const enlargedImgContainer = document.getElementById('enlargedImg');
               const enlargedImgContent = document.getElementById('enlargedImgContent');
               let currentPage = 1;
+              let maxPage = 0;
               const imagesPerPage = 8;
 
               // Function to update displayed images based on the current page
               const updateDisplayedImages = (data) => {
-                thumbnailsContainer.innerHTML = ''; // Clear the thumbnails container
+                var numChildren = thumbnailsContainer.children.length;
+                for (var i = 0; i < numChildren - 2; i++) {
+                  thumbnailsContainer.children[1].remove()
+                }                
+                const nextButton = document.getElementById('nextButtonContainer')
+
                 const paginatedImages = data.images.filter(image => {
                   return image.page === currentPage; // Assuming each image has a "page" property
                 });
-
                 paginatedImages.forEach(image => {
                   const img = document.createElement('img');
                   img.src = image.filename;
@@ -97,7 +100,10 @@
                     enlargedImgContent.src = this.src;
                     enlargedImgContainer.style.display = 'block';
                   });
-                  thumbnailsContainer.appendChild(img);
+                  const thumbnailContainer = document.createElement('div');
+                  thumbnailContainer.className = "thumbnailContainer";
+                  thumbnailContainer.appendChild(img);
+                  thumbnailsContainer.insertBefore(thumbnailContainer, nextButton);
                 });
               };
 
@@ -105,6 +111,10 @@
               const nextPage = (data) => {
                 currentPage++;
                 updateDisplayedImages(data);
+                const previousButtonContainer = document.getElementById('previousButtonContainer');
+                const nextButtonContainer = document.getElementById('nextButtonContainer');
+                previousButtonContainer.style.display = currentPage > 1 ? "block" : "none";
+                nextButtonContainer.style.display = currentPage < maxPage ? "block" : "none";
               };
 
               // Function to handle previous page action
@@ -112,27 +122,53 @@
                 if (currentPage > 1) {
                   currentPage--;
                   updateDisplayedImages(data);
+                  const previousButtonContainer = document.getElementById('previousButtonContainer');
+                  const nextButtonContainer = document.getElementById('nextButtonContainer');
+                  previousButtonContainer.style.display = currentPage > 1 ? "block" : "none";
+                  nextButtonContainer.style.display = currentPage < maxPage ? "block" : "none";
                 }
               };
 
               fetch('maxi01/photos.json') // Replace with the actual path to your JSON file
                 .then(response => response.json())
                 .then(data => {
+                  data.images.forEach(img => {
+                    if (img.page > maxPage) {
+                      maxPage = img.page;
+                    }
+                  });
+                  
                   updateDisplayedImages(data); // Initial display of images
-                  // Add pagination buttons
+
+                  // Add previous button
                   const previousButton = document.createElement('button');
-                  previousButton.textContent = 'Page précédente';
+                  previousButton.setAttribute('id', 'previousButton');
+                  previousButton.className = "thumbnailButton";
+                  previousButton.textContent = '<';
+                  const previousButtonContainer = document.createElement('div');
+                  previousButtonContainer.setAttribute('id', 'previousButtonContainer');
+                  previousButtonContainer.className = "thumbnailButtonContainer";
                   previousButton.addEventListener('click', () => {
                     previousPage(data);
                   });
-                  buttonControls.appendChild(previousButton);
-
-                  const nextButton = document.createElement('button');
-                  nextButton.textContent = 'Page suivante';
+                  previousButtonContainer.appendChild(previousButton);
+                  thumbnailsContainer.insertBefore(previousButtonContainer, thumbnailsContainer.firstChild);
+                  previousButtonContainer.style.display = currentPage > 1 ? "block" : "none";
+                  
+                  // Add next previous button
+                  const nextButton = document.createElement(tagName = 'button');
+                  nextButton.setAttribute('id', 'nextButton');
+                  nextButton.className = "thumbnailButton";
+                  nextButton.textContent = '>';
+                  const nextButtonContainer = document.createElement('div');
+                  nextButtonContainer.setAttribute('id', 'nextButtonContainer');
+                  nextButtonContainer.className = "thumbnailButtonContainer"
                   nextButton.addEventListener('click', () => {
                     nextPage(data);
                   });
-                  buttonControls.appendChild(nextButton); // Append the button to the document
+                  nextButtonContainer.appendChild(nextButton);
+                  thumbnailsContainer.appendChild(nextButtonContainer);
+                  nextButtonContainer.style.display = currentPage < maxPage ? "block" : "none";
                 })
                 .catch(error => console.error('Error fetching images:', error))
             </script>

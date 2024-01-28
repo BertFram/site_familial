@@ -55,38 +55,71 @@ body {
   color: #FFFFFF;
 }
 
-.thumbnail {
-  width: 120px;
-  /* Set the width of the thumbnails */
-  max-height: 120px;
-  /* Set the height of the thumbnails */
-  object-fit: contain;
-  /* Ensure the entire image is visible within the thumbnail dimensions */
-  cursor: pointer;
-  /* Change cursor to pointer on hover for clickable effect */
-  padding: 2px;
-}
-
-#buttonControls {
-  margin: 5px 440px;
-  /* Hide the enlarged image container by default */
-}
-
 #enlargedImg {
   display: none;
-  /* Hide the enlarged image container by default */
-}
-
-#thumbnails {
-  margin: 0px 67px;
   /* Hide the enlarged image container by default */
 }
 
 .enlargedImgContent {
   width: 1148px;
   /* Set the width of the enlarged picture */
-  height: 1000px;
+  height: 600px;
   /* Set the height of the enlarged picture */
   object-fit: contain;
   /* Ensure the entire image is visible within the thumbnail dimensions */
+  margin: 2px;
+}
+
+.thumbnails {
+  position: relative;
+  /* Hide the enlarged image container by default */
+  display: flex;
+}
+
+.thumbnailButtonContainer {
+  position: relative;
+  width: 6%;
+  height: 120px;
+}
+
+.thumbnailButton {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  font-size: xx-large;
+  color: #FFF;
+  background: none;
+  border: none;
+  align-self: center;
+  cursor: pointer;
+  z-index: 1;
+  background-color: #070c5a;
+  font-family: "emoji";
+  border-radius: 10%;
+}
+
+.thumbnailButton:hover {
+  background-color: #444a94;
+}
+
+.thumbnailContainer {
+  width: 11%;
+  height: 120px;
+  position: relative;
+}
+
+.thumbnail {
+  max-width: 120px;
+  /* Set the width of the thumbnails */
+  max-height: 120px;
+  /* Set the height of the thumbnails */
+  object-fit: contain;
+  /* Ensure the entire image is visible within the thumbnail dimensions */
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+
 }
