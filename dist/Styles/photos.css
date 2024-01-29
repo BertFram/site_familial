@@ -57,17 +57,26 @@ body {
 
 #enlargedImg {
   display: none;
+  position: relative;
   /* Hide the enlarged image container by default */
 }
 
-.enlargedImgContent {
-  width: 1148px;
-  /* Set the width of the enlarged picture */
+.enlargedImgContainer {
+  width: 88%;
+  position: relative;
   height: 600px;
+  padding-bottom: 10px;
+}
+
+.enlargedImgContent {
+  max-height: 600px;
+  max-width: 100%;
   /* Set the height of the enlarged picture */
   object-fit: contain;
-  /* Ensure the entire image is visible within the thumbnail dimensions */
-  margin: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
 }
 
 .thumbnails {
@@ -79,7 +88,7 @@ body {
 .thumbnailButtonContainer {
   position: relative;
   width: 6%;
-  height: 120px;
+  height: inherit;
 }
 
 .thumbnailButton {
@@ -121,5 +130,4 @@ body {
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
-
 }
