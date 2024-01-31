@@ -9,7 +9,8 @@ body {
   color: #000000;
   background-color: #3300FF;
 }
-
+.background1
+{background-image: url("/Voyages/Media/Voyages_BKG2.jpg");}
 .oneColElsCtr #container {
   width: 72em;
   background-color: #3300FF;
