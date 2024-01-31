@@ -71,6 +71,7 @@ body {
   position: relative;
   height: 600px;
   padding-bottom: 10px;
+  margin-top: 50px;
 }
 
 .enlargedImgContent {
@@ -88,6 +89,7 @@ body {
   position: relative;
   /* Hide the enlarged image container by default */
   display: flex;
+  margin-top: 50px;
 }
 
 .thumbnailButtonContainer {
@@ -135,4 +137,15 @@ body {
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
+}
+
+.backButton {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+}
+
+a:hover {
+  cursor: pointer;
 }
