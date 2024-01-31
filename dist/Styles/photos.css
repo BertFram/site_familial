@@ -11,6 +11,10 @@ body {
 }
 .background1
 {background-image: url("/Voyages/Media/Voyages_BKG2.jpg");}
+
+.background2
+{background-image: url("/Voyages/Media/Voyages_BKG.jpg");}
+
 .oneColElsCtr #container {
   width: 72em;
   background-color: #3300FF;
