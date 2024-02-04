@@ -108,10 +108,10 @@ a:hover, a:focus {
 
 /* Page */
 body {
-	padding: 20px 5px;
+	padding: 0px 5px;
 }
 #global {
-	width: 1120px;
+	width: 1148px;
 	margin: 0px auto 0; /* -> 3 */
 }
 

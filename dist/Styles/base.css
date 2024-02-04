@@ -97,7 +97,8 @@ a:hover, a:focus {
 	color: crimson;
 }
 a img {
-	border: none; /* -> 10 */
+	border: none;
+	padding: 0; /* -> 10 */
 }
 
 /* Divers éléments de type en-ligne */
@@ -252,12 +253,6 @@ pre strong {
 	color: #F0F;
 	font-weight: bold;
 }
-.volleystory {
-	font-size: 1.8em;
-	font-weight: bold;
-	color: #F00;
-	text-decoration: overline;
-}
 .titre {
 	font-size: 2.3em;
 	font-family: Georgia, "Times New Roman", Times, serif;
@@ -293,10 +288,6 @@ pre strong {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 1.3em;
 	font-style: italic;
-}
-.matchfinitableaujaune {
-	color: #000;
-	background-color: #FF9;
 }
 .vert_italique {
 	font-style: italic;
