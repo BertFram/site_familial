@@ -20,7 +20,7 @@ body {
 	background: #FFF;
 }
 a {
-	color: #FF6533;
+	color: #035216;
 }
 a:hover, a:focus {
 	color: #FF4C00;
@@ -44,7 +44,7 @@ a:hover, a:focus {
 	margin-top: 0px;
 }
 #navigation a {
-	color: #F00;
+	color: rgb(255, 0, 0);
 	padding: 6px;
 	line-height: 1.5;
 	text-decoration: none;
