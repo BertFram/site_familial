@@ -1,0 +1,204 @@
+{
+  "images": [
+    {
+      "filename": "/Voyages/Alpes2005/maxi/01-2 motos.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/01b-Ormont repas.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/02a-Gstaad Coco.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/02b-Gstaad veau.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/03-Gstaad statue.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/04-Wildbach vue du balcon.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/05-Wildbach tombée du jour.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/06-Brienz tombée du jour.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/07a-Rigi bac pour Gersau.jpg",
+      "page": 2
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/07b-Rigi bac pour Gersau.jpg",
+      "page": 2
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/08-Lac des 4 cantons.jpg",
+      "page": 2
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/09-Lac des 4 cantons Zeppelin.jpg",
+      "page": 2
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/10-Lac des 4 cantons 2.jpg",
+      "page": 2
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/11-Rigi Rigibahn.jpg",
+      "page": 2
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/12-Rigi Coco et Japs.jpg",
+      "page": 2
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/13-Rigi Kulm Bertrand.jpg",
+      "page": 2
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/14-Rigi 2 Suisses.jpg",
+      "page": 3
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/15-Rigi vaches.jpg",
+      "page": 3
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/16-Lucerne - Kapellbrucke.jpg",
+      "page": 3
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/17-Lucerne - Rathaus Turm.jpg",
+      "page": 3
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/18-Lucerne - Gasthaus.jpg",
+      "page": 3
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/19-Lucerne - Reussbrucke1.jpg",
+      "page": 3
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/2 Suisses d'anniversaire.jpg",
+      "page": 3
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/20-Lucerne - Reussbrucke4.jpg",
+      "page": 3
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/21-Lucerne - Reussbrucke3.jpg",
+      "page": 4
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/22-Lucerne - Reussbrucke2.jpg",
+      "page": 4
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/23-Lungernsee.jpg",
+      "page": 4
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/24-Surprise à 960 CHF.jpg",
+      "page": 4
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/25a-Grimselpass pano.JPG",
+      "page": 4
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/25a-Grimselpass pano2.JPG",
+      "page": 4
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/25b-Grimselpass.JPG",
+      "page": 4
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/25c-Gletsch.jpg",
+      "page": 4
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/26-Gletsch Rhonegletscher.jpg",
+      "page": 5
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/27-Giessbach chutes 1.jpg",
+      "page": 5
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/28-Giessbach Grandhotel.jpg",
+      "page": 5
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/29-Giessbach vue de Wildbach.jpg",
+      "page": 5
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/30-Giessbach embarquadère.jpg",
+      "page": 5
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/31-Lindenhof Bärengraben1.jpg",
+      "page": 5
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/32-Lindenhof Bärengraben2.jpg",
+      "page": 5
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/33-Brienz rue typique.jpg",
+      "page": 5
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/34-Brienz carte au Greu.jpg",
+      "page": 6
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/35-Brienzer Rothorn pano.JPG",
+      "page": 6
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/36a-Berne  depuis St Vincent1.jpg",
+      "page": 6
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/36b-Berne  depuis St Vincent2.jpg",
+      "page": 6
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/36c-Berne  depuis St Vincent3.jpg",
+      "page": 6
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/36d-Berne  St Vincent1.jpg",
+      "page": 6
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/36e-Berne  St Vincent1.jpg",
+      "page": 6
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/39-Berne ogre.jpg",
+      "page": 6
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/40-Môtier distillerie.jpg",
+      "page": 7
+    },
+    {
+      "filename": "/Voyages/Alpes2005/maxi/41-Môtier auberge des 6 communes.jpg",
+      "page": 7
+    }
+  ]
+}

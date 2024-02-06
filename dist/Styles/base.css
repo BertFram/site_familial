@@ -19,7 +19,7 @@ body {
 	padding: 0;
 	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
 	color: #000000;
-	background-color: #5c34fc;
+	background-image: url("../Voyages/Media/Voyages_BKG2R.jpg")
 }
 .oneColElsCtr #container {
 	width: 72em;
