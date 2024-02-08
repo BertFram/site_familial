@@ -8,10 +8,19 @@ body {
   background-color: #3300FF;
 }
 .background1
-{background-image: url("/Voyages/Media/Voyages_BKG2R.jpg");}
+{background-image: url("/Media/Waves_BKGR.jpg");}
 
 .background2
-{background-image: url("/Voyages/Media/Voyages_BKG.jpg");}
+{background-image: url("/Media/Clouds_BKG.jpg");}
+
+.background3
+{background-image: url("/Media/BlueCanvas_BKG.jpg");}
+
+.background4
+{background-image: url("/Media/bkgrnd_sable2.jpg");}
+
+.background5
+{background-image: url("/Media/bkgrnd_cocotree.jpg");}
 
 .oneColElsCtr #container {
   width: 72em;
@@ -28,11 +37,33 @@ body {
   /* remember that padding is the space inside the div box and margin is the space outside the div box */
 }
 
+.style1 {
+  font-size: 18px;
+  color: #800000;
+}
+.style2 {
+  font-size: 18px;
+  color: #ffff00;
+}
+
 .style3 {
   font-size: 18px;
   color: #006600;
 }
 
+.style4 {
+  font-size: 12px;
+  color: #800000;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
+.style5 {
+  font-size: 12px;
+  color: #ffff00;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
 .style6 {
   font-size: 12px;
   color: #006600;
