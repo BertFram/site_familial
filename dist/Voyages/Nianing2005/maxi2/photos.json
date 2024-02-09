@@ -1,10 +1,6 @@
 {
   "images": [
     {
-      "filename": "/Voyages/Nianing2005/maxi2/1698.jpg",
-      "page": 1
-    },
-    {
       "filename": "/Voyages/Nianing2005/maxi2/Nianing5 (00).jpg",
       "page": 1
     },
@@ -34,7 +30,7 @@
     },
     {
       "filename": "/Voyages/Nianing2005/maxi2/Nianing5 (09).jpg",
-      "page": 2
+      "page": 1
     },
     {
       "filename": "/Voyages/Nianing2005/maxi2/Nianing5 (10).jpg",
@@ -66,7 +62,7 @@
     },
     {
       "filename": "/Voyages/Nianing2005/maxi2/Nianing5 (20).jpg",
-      "page": 3
+      "page": 2
     },
     {
       "filename": "/Voyages/Nianing2005/maxi2/Nianing5 (21).jpg",
@@ -98,7 +94,7 @@
     },
     {
       "filename": "/Voyages/Nianing2005/maxi2/Nianing5 (29).jpg",
-      "page": 4
+      "page": 3
     },
     {
       "filename": "/Voyages/Nianing2005/maxi2/Nianing5 (30).jpg",
@@ -130,7 +126,7 @@
     },
     {
       "filename": "/Voyages/Nianing2005/maxi2/Nianing5 (40).jpg",
-      "page": 5
+      "page": 4
     },
     {
       "filename": "/Voyages/Nianing2005/maxi2/Nianing5 (41).jpg",
@@ -162,7 +158,7 @@
     },
     {
       "filename": "/Voyages/Nianing2005/maxi2/Nianing5 (51).jpg",
-      "page": 6
+      "page": 5
     },
     {
       "filename": "/Voyages/Nianing2005/maxi2/Nianing5 (52).jpg",
@@ -173,7 +169,7 @@
       "page": 6
     },
     {
-      "filename": "/Voyages/Nianing2005/maxi2/Wolof.jpg",
+      "filename": "/Voyages/Nianing2005/maxi2/Nianing5 (54).jpg",
       "page": 6
     }
   ]
