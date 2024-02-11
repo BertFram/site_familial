@@ -98,12 +98,12 @@ body {
 .enlargedImgContainer {
   width: 88%;
   position: relative;
-  height: 600px;
+  height: 650px;
   margin-top: 50px;
 }
 
 .enlargedImgContent {
-  max-height: 600px;
+  max-height: 650px;
   max-width: 100%;
   /* Set the height of the enlarged picture */
   object-fit: contain;
@@ -117,7 +117,7 @@ body {
   position: relative;
   /* Hide the enlarged image container by default */
   display: flex;
-  margin-top: 30px;
+  margin-top: 35px;
 }
 
 .thumbnailButtonContainer {
@@ -149,14 +149,14 @@ body {
 
 .thumbnailContainer {
   width: 11%;
-  height: 120px;
+  height: 100px;
   position: relative;
 }
 
 .thumbnail {
   max-width: 120px;
   /* Set the width of the thumbnails */
-  max-height: 120px;
+  max-height: 100px;
   /* Set the height of the thumbnails */
   object-fit: contain;
   /* Ensure the entire image is visible within the thumbnail dimensions */
