@@ -1,6 +1,30 @@
 {
   "images": [
     {
+      "filename": "/Voyages/Cuba2001/maxi/Picture01.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/Voyages/Cuba2001/maxi/Picture02.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/Voyages/Cuba2001/maxi/Picture03.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/Voyages/Cuba2001/maxi/Picture04.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/Voyages/Cuba2001/maxi/Picture05.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/Voyages/Cuba2001/maxi/Picture06.jpg",
+      "page": 1
+    },
+    {
       "filename": "/Voyages/Cuba2001/maxi/Picture07.jpg",
       "page": 1
     },
@@ -10,27 +34,23 @@
     },
     {
       "filename": "/Voyages/Cuba2001/maxi/Picture09.jpg",
-      "page": 1
-    },
-    {
-      "filename": "/Voyages/Cuba2001/maxi/Picture1.jpg",
-      "page": 1
+      "page": 2
     },
     {
       "filename": "/Voyages/Cuba2001/maxi/Picture10.jpg",
-      "page": 1
+      "page": 2
     },
     {
       "filename": "/Voyages/Cuba2001/maxi/Picture11.jpg",
-      "page": 1
+      "page": 2
     },
     {
       "filename": "/Voyages/Cuba2001/maxi/Picture12.jpg",
-      "page": 1
+      "page": 2
     },
     {
       "filename": "/Voyages/Cuba2001/maxi/Picture13.jpg",
-      "page": 1
+      "page": 2
     },
     {
       "filename": "/Voyages/Cuba2001/maxi/Picture14.jpg",
@@ -46,23 +66,19 @@
     },
     {
       "filename": "/Voyages/Cuba2001/maxi/Picture17.jpg",
-      "page": 2
+      "page": 3
     },
     {
       "filename": "/Voyages/Cuba2001/maxi/Picture18.jpg",
-      "page": 2
+      "page": 3
     },
     {
       "filename": "/Voyages/Cuba2001/maxi/Picture19.jpg",
-      "page": 2
-    },
-    {
-      "filename": "/Voyages/Cuba2001/maxi/Picture2.jpg",
-      "page": 2
+      "page": 3
     },
     {
       "filename": "/Voyages/Cuba2001/maxi/Picture20.jpg",
-      "page": 2
+      "page": 3
     },
     {
       "filename": "/Voyages/Cuba2001/maxi/Picture21.jpg",
@@ -82,26 +98,22 @@
     },
     {
       "filename": "/Voyages/Cuba2001/maxi/Picture25.jpg",
-      "page": 3
-    },
-    {
-      "filename": "/Voyages/Cuba2001/maxi/Picture26.jpg",
-      "page": 3
-    },
-    {
-      "filename": "/Voyages/Cuba2001/maxi/Picture27.jpg",
-      "page": 3
-    },
-    {
-      "filename": "/Voyages/Cuba2001/maxi/Picture28.jpg",
-      "page": 3
-    },
-    {
-      "filename": "/Voyages/Cuba2001/maxi/Picture29.jpg",
       "page": 4
     },
     {
-      "filename": "/Voyages/Cuba2001/maxi/Picture3.jpg",
+      "filename": "/Voyages/Cuba2001/maxi/Picture26.jpg",
+      "page": 4
+    },
+    {
+      "filename": "/Voyages/Cuba2001/maxi/Picture27.jpg",
+      "page": 4
+    },
+    {
+      "filename": "/Voyages/Cuba2001/maxi/Picture28.jpg",
+      "page": 4
+    },
+    {
+      "filename": "/Voyages/Cuba2001/maxi/Picture29.jpg",
       "page": 4
     },
     {
@@ -114,18 +126,6 @@
     },
     {
       "filename": "/Voyages/Cuba2001/maxi/Picture33.jpg",
-      "page": 4
-    },
-    {
-      "filename": "/Voyages/Cuba2001/maxi/Picture4.jpg",
-      "page": 4
-    },
-    {
-      "filename": "/Voyages/Cuba2001/maxi/Picture5.jpg",
-      "page": 4
-    },
-    {
-      "filename": "/Voyages/Cuba2001/maxi/Picture6.jpg",
       "page": 4
     }
   ]
