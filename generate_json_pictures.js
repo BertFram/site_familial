@@ -159,9 +159,19 @@ const paths = [
     filename: '/Voyages/Nianing2011/maxi/'
   },
   {
-    folderPath: 'dist/Voyages/Tanzanie2011/maxi/',
-    jsonFilePath: 'dist/Voyages/Tanzanie2011/maxi/photos.json',
-    filename: '/Voyages/Tanzanie2011/maxi/'
+    folderPath: 'dist/Voyages/Tanzanie2011/maxi1/',
+    jsonFilePath: 'dist/Voyages/Tanzanie2011/maxi1/photos.json',
+    filename: '/Voyages/Tanzanie2011/maxi1/'
+  },
+  {
+    folderPath: 'dist/Voyages/Tanzanie2011/maxi2/',
+    jsonFilePath: 'dist/Voyages/Tanzanie2011/maxi2/photos.json',
+    filename: '/Voyages/Tanzanie2011/maxi2/'
+  },
+  {
+    folderPath: 'dist/Voyages/Tanzanie2011/maxi3/',
+    jsonFilePath: 'dist/Voyages/Tanzanie2011/maxi3/photos.json',
+    filename: '/Voyages/Tanzanie2011/maxi3/'
   },
   {
     folderPath: 'dist/Voyages/RajaAmpat2014/maxi/',
