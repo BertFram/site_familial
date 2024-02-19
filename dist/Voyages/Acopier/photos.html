@@ -5,19 +5,19 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="language" content="fr" />
-  <title>Malaisie</title>
+  <title>photos.html</title>
   <link href="../../Styles/base.css" rel="stylesheet" type="text/css" />
   <link href="../../Styles/photos.css" rel="stylesheet" type="text/css" />
   <link href="../../Styles/VBCFP11.css" rel="stylesheet" type="text/css" />
   <style type="text/css"></style>
 </head>
 
-<body class="oneColElsCtr background2">
+<body class="oneColElsCtr background3">
   <div id="container">
 
     <table width="100%" border="0" cellpadding="0" bgcolor="#3300CC">
       <tr>
-        <td><div align="center"><img src="images/Malaisie_banner.jpg" alt="Malaisie2010 banner" width="1148" height="120" /></div></td>
+        <td><div align="center"><img src="images/Photo_banner.jpg" alt="Photo_banner" width="1148" height="120" /></div></td>
       </tr>
     </table>
 
@@ -37,6 +37,7 @@
       </tbody>
     </table>
 
+    <a onclick="history.back()" class="backButton"><img src="/Media/classic_home_button.jpg"/></a>
     <div align="center" class="oneColElsCtr">
       <table width="100%" border="0" align="center" cellpadding="2" bgcolor="#99CCFF">
         <tr>
@@ -92,6 +93,7 @@
                   img.addEventListener('click', function () {
                     enlargedImgContent.src = this.src;
                     enlargedImgContainer.style.display = 'flex';
+                    thumbnailsContainer.style.marginTop = '5px';                    
                     for (var i = 0; i < data.images.length; i++) {
                       if (data.images[i].filename == image.filename) {
                         currentImage = i;
@@ -150,7 +152,7 @@
                 }
               };
 
-              fetch('maxi01/photos.json') // Replace with the actual path to your JSON file
+              fetch('maxi/photos.json') // Replace with the actual path to your JSON file
                 .then(response => response.json())
                 .then(data => {
                   data.images.forEach(img => {

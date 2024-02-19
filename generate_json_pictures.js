@@ -354,14 +354,14 @@ const paths = [
     filename: '/Voyages/Maldives2018/maxi/'
   },
   {
-    folderPath: 'dist/Voyages/Visayas2015/maxi/',
-    jsonFilePath: 'dist/Voyages/Visayas2015/maxi/photos.json',
-    filename: '/Voyages/Visayas2015/maxi/'
+    folderPath: 'dist/Voyages/Visayas2015/maxi1/',
+    jsonFilePath: 'dist/Voyages/Visayas2015/maxi1/photos.json',
+    filename: '/Voyages/Visayas2015/maxi1/'
   },
   {
-    folderPath: 'dist/Voyages/Visayas2015/voyage/',
-    jsonFilePath: 'dist/Voyages/Visayas2015/voyage/photos.json',
-    filename: '/Voyages/Visayas2015/voyage/'
+    folderPath: 'dist/Voyages/Visayas2015/maxi2/',
+    jsonFilePath: 'dist/Voyages/Visayas2015/maxi2/photos.json',
+    filename: '/Voyages/Visayas2015/maxi2/'
   },
   {
     folderPath: 'dist/Voyages/Socorro2017/maxi1/',
