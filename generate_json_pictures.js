@@ -344,9 +344,39 @@ const paths = [
     filename: '/Voyages/Komodo2013/maxi/'
   },
   {
-    folderPath: 'dist/Voyages/USA2015/maxi/',
-    jsonFilePath: 'dist/Voyages/USA2015/maxi/photos.json',
-    filename: '/Voyages/USA2015/maxi/'
+    folderPath: 'dist/Voyages/USA2015/maxi1/',
+    jsonFilePath: 'dist/Voyages/USA2015/maxi1/photos.json',
+    filename: '/Voyages/USA2015/maxi1/'
+  },
+  {
+    folderPath: 'dist/Voyages/USA2015/maxi2/',
+    jsonFilePath: 'dist/Voyages/USA2015/maxi2/photos.json',
+    filename: '/Voyages/USA2015/maxi2/'
+  },
+  {
+    folderPath: 'dist/Voyages/USA2015/maxi3/',
+    jsonFilePath: 'dist/Voyages/USA2015/maxi3/photos.json',
+    filename: '/Voyages/USA2015/maxi3/'
+  },
+  {
+    folderPath: 'dist/Voyages/USA2015/maxi4/',
+    jsonFilePath: 'dist/Voyages/USA2015/maxi4/photos.json',
+    filename: '/Voyages/USA2015/maxi4/'
+  },
+  {
+    folderPath: 'dist/Voyages/USA2015/maxi5/',
+    jsonFilePath: 'dist/Voyages/USA2015/maxi5/photos.json',
+    filename: '/Voyages/USA2015/maxi5/'
+  },
+  {
+    folderPath: 'dist/Voyages/USA2015/maxi6/',
+    jsonFilePath: 'dist/Voyages/USA2015/maxi6/photos.json',
+    filename: '/Voyages/USA2015/maxi6/'
+  },
+  {
+    folderPath: 'dist/Voyages/USA2015/maxi7/',
+    jsonFilePath: 'dist/Voyages/USA2015/maxi7/photos.json',
+    filename: '/Voyages/USA2015/maxi7/'
   },
   {
     folderPath: 'dist/Voyages/Maldives2018/maxi/',

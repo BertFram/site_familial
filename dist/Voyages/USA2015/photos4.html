@@ -5,7 +5,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="language" content="fr" />
-  <title>photos.html</title>
+  <title>photos4.html</title>
   <link href="../../Styles/base.css" rel="stylesheet" type="text/css" />
   <link href="../../Styles/photos.css" rel="stylesheet" type="text/css" />
   <link href="../../Styles/VBCFP11.css" rel="stylesheet" type="text/css" />
@@ -17,7 +17,7 @@
 
     <table width="100%" border="0" cellpadding="0" bgcolor="#3300CC">
       <tr>
-        <td><div align="center"><img src="images/Banner.jpg" alt="Maldives 2018 banner" width="1148" height="120" /></div></td>
+        <td><div align="center"><img src="images/USA2015banner.jpg" alt="USA2015 banner" width="1148" height="120" /></div></td>
       </tr>
     </table>
 
@@ -37,7 +37,7 @@
       </tbody>
     </table>
 
-    <a onclick="history.back()" class="backButton"><img src="../Media/up.gif"/></a>
+    <a onclick="history.back()" class="backButton"><img src="/Media/classic_home_button.jpg"/></a>
     <div align="center" class="oneColElsCtr">
       <table width="100%" border="0" align="center" cellpadding="2" bgcolor="#99CCFF">
         <tr>
@@ -152,7 +152,7 @@
                 }
               };
 
-              fetch('maxi/photos.json') // Replace with the actual path to your JSON file
+              fetch('maxi4/photos.json') // Replace with the actual path to your JSON file
                 .then(response => response.json())
                 .then(data => {
                   data.images.forEach(img => {
@@ -206,6 +206,9 @@
                 })
                 .catch(error => console.error('Error fetching images:', error))
             </script>
+        <tr>
+          <td align="left"><span class="style6 style13">Dernière mise à jour 29/01/2024</span></td>
+        </tr>
         </td>
         </tr>
       </table>
