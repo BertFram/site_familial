@@ -19,7 +19,7 @@ body {
 	padding: 0;
 	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
 	color: #000000;
-	background-image: url("../Voyages/Media/Voyages_BKG2R.jpg")
+	background-image: url("../Media/Waves_BKGR.jpg")
 }
 .oneColElsCtr #container {
 	width: 72em;
@@ -42,7 +42,7 @@ h1, h2 {
 	text-align: center; /* -> 7 */
 }
 h1 {
-	font-size: 3em; /* -> 8 */
+	font-size: 2.2em; /* -> 8 */
 	font-style: italic;
 }
 h2 {
