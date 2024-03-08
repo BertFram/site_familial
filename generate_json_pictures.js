@@ -4,6 +4,11 @@ const path = require('path');
 const paths = [
   
   {
+    folderPath: 'dist/Fetes/LaVGril/maxi/',
+    jsonFilePath: 'dist/Fetes/LaVGril/maxi/photos.json',
+    filename: '/Fetes/LaVGril/maxi/'
+  },
+  {
     folderPath: 'dist/Fetes/100_ans/maxi/',
     jsonFilePath: 'dist/Fetes/100_ans/maxi/photos.json',
     filename: '/Fetes/100_ans/maxi/'
