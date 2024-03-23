@@ -152,6 +152,11 @@
                 }
               };
 
+              // Open image in large format in a new tab
+              enlargedImgContent.addEventListener('click', function () {
+                window.open(enlargedImgContent.src);
+              });
+
               fetch('maxi01/photos.json') // Replace with the actual path to your JSON file
                 .then(response => response.json())
                 .then(data => {
