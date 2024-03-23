@@ -1,0 +1,226 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="language" content="fr" />
+  <title>Foncin</title>
+  <link href="../../Styles/base.css" rel="stylesheet" type="text/css" />
+  <link href="../../Styles/photos.css" rel="stylesheet" type="text/css" />
+  <link href="../../Styles/VBCFP11.css" rel="stylesheet" type="text/css" />
+  <style type="text/css"></style>
+</head>
+
+<body class="oneColElsCtr background3">
+  <div id="container">
+
+    <table width="100%" border="0" cellpadding="0" bgcolor="#3300CC">
+      <tr>
+        <td><div align="center"><img src="images/Foncin_banner.jpg" alt="Foncin banner" width="1148" height="280" /></div></td>
+      </tr>
+    </table>
+
+    <table cellpadding="0" bordercolor="#3300FF" border="2" bgcolor="#3366FF" align="center" width="100%">
+      <tbody>
+        <tr>
+          <td><div align="center"><a href="../../index.html" class="style3 style13">Home</a></div></td>
+          <td><div align="center"><a href="../../nous.html" class="style14">Nous</a></div></td>
+          <td><div align="center"><a href="../../voyages.html" class="style14">Voyages</a></div></td>
+          <td><div align="center"><a href="../../fetes.html" class="style14">Fêtes</a></div></td>
+          <td><div align="center"><a href="../../albums.html" class="style14">Albums</a></div></td>
+          <td><div align="center"><a href="../../hugo.html" class="style14">Hugo</a></div></td>
+          <td><div align="center"><a href="http://www.volleyprevessin.fr" class="style14">Volley</a></div></td>
+          <td><div align="center"><a href="https://cern-scuba-club.vpdive.com/w/accueil" class="style14">Plongée</a></div></td>
+          <td><div align="center"><a href="../../contact.html" class="style14">Contacts</a></div></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <a onclick="history.back()" class="backButton"><img src="/Media/classic_home_button.jpg"/></a>
+    <div align="center" class="oneColElsCtr">
+      <table width="100%" border="0" align="center" cellpadding="2" bgcolor="#99CCFF">
+        <tr>
+          <td>
+            <div id="enlargedImg">
+              <div id="enlargedPreviousButtonContainer" class="thumbnailButtonContainer">
+                <button id="enlargedPreviousButton" class="thumbnailButton">&lt;</button>
+              </div>
+              <div id="enlargedImgContainer" class="enlargedImgContainer">
+                <img id="enlargedImgContent" src="" alt="Enlarged Image" class="enlargedImgContent">
+              </div>
+              <div id="enlargedNextButtonContainer" class="thumbnailButtonContainer">
+                <button id="enlargedNextButton" class="thumbnailButton">&gt;</button>
+              </div>
+            </div>
+            <div id="thumbnails" class="thumbnails"></div>
+            <script>
+              const thumbnailsContainer = document.getElementById('thumbnails');
+              const enlargedImgContainer = document.getElementById('enlargedImg');
+              const enlargedImgContent = document.getElementById('enlargedImgContent');
+              let currentPage = 1;
+              let maxPage = 0;
+              let currentImage = -1;
+              let maxImage = -1;
+              const imagesPerPage = 8;
+
+              const updateButtonsVisibility = () => {
+                const previousButtonContainer = document.getElementById('previousButtonContainer');
+                const nextButtonContainer = document.getElementById('nextButtonContainer');
+                const enlargedPreviousButtonContainer = document.getElementById('enlargedPreviousButtonContainer');
+                const enlargedNextButtonContainer = document.getElementById('enlargedNextButtonContainer');
+                previousButtonContainer.style.opacity = currentPage > 1 ? 1 : 0;
+                nextButtonContainer.style.opacity = currentPage < maxPage ? 1 : 0;
+                enlargedPreviousButtonContainer.style.opacity = currentImage > 0 ? 1 : 0;
+                enlargedNextButtonContainer.style.opacity = currentImage < maxImage - 1 ? 1 : 0;
+              }
+
+              // Function to update displayed images based on the current page
+              const updateDisplayedImages = (data) => {
+                var numChildren = thumbnailsContainer.children.length;
+                for (var i = 0; i < numChildren - 2; i++) {
+                  thumbnailsContainer.children[1].remove()
+                }                
+                const nextButton = document.getElementById('nextButtonContainer')
+
+                const paginatedImages = data.images.filter(image => {
+                  return image.page === currentPage; // Assuming each image has a "page" property
+                });
+                paginatedImages.forEach(image => {
+                  const img = document.createElement('img');
+                  img.src = image.filename;
+                  img.classList.add('thumbnail');
+                  img.addEventListener('click', function () {
+                    enlargedImgContent.src = this.src;
+                    enlargedImgContainer.style.display = 'flex';
+                    thumbnailsContainer.style.marginTop = '5px';
+                    for (var i = 0; i < data.images.length; i++) {
+                      if (data.images[i].filename == image.filename) {
+                        currentImage = i;
+                        break;
+                      }
+                    }
+                    updateButtonsVisibility();
+                  });
+                  const thumbnailContainer = document.createElement('div');
+                  thumbnailContainer.className = "thumbnailContainer";
+                  thumbnailContainer.appendChild(img);
+                  thumbnailsContainer.insertBefore(thumbnailContainer, nextButton);
+                });
+              };
+
+              // Function to handle next image action
+              const nextImage = (data) => {
+                if (currentImage < maxImage - 1) {
+                  currentImage++;
+                  enlargedImgContent.src = data.images[currentImage].filename;
+                  if (currentPage != data.images[currentImage].page) {
+                    nextPage(data);
+                  }
+                  updateButtonsVisibility();
+                }
+              };
+
+              // Function to handle previous image action
+              const previousImage = (data) => {
+                if (currentImage > 0) {
+                  currentImage--;
+                  enlargedImgContent.src = data.images[currentImage].filename;
+                  enlargedImgContainer.style.display = 'flex';
+                  if (currentPage != data.images[currentImage].page) {
+                    previousPage(data);
+                  }
+                  updateButtonsVisibility();
+                }
+              };
+
+              // Function to handle next page action
+              const nextPage = (data) => {
+                if (currentPage < maxPage) {
+                  currentPage++;
+                  updateDisplayedImages(data);
+                  updateButtonsVisibility();
+                }
+              };
+
+              // Function to handle previous page action
+              const previousPage = (data) => {
+                if (currentPage > 1) {
+                  currentPage--;
+                  updateDisplayedImages(data);
+                  updateButtonsVisibility();
+                }
+              };
+
+              // Open image in large format in a new tab
+              enlargedImgContent.addEventListener('click', function () {
+                window.open(enlargedImgContent.src);
+              });
+
+              fetch('maxi/photos.json') // Replace with the actual path to your JSON file
+                .then(response => response.json())
+                .then(data => {
+                  data.images.forEach(img => {
+                    if (img.page > maxPage) {
+                      maxPage = img.page;
+                    }
+                  });
+                  maxImage = data.images.length;
+                  
+                  updateDisplayedImages(data); // Initial display of images
+
+                  // Handle next and previous image clicks
+                  const previousImageButton = document.getElementById('enlargedPreviousButton');
+                  const nextImageButton = document.getElementById('enlargedNextButton');
+                  previousImageButton.addEventListener('click', () => {
+                    previousImage(data);
+                  });
+                  nextImageButton.addEventListener('click', () => {
+                    nextImage(data);
+                  });
+
+                  // Add previous button
+                  const previousButton = document.createElement('button');
+                  previousButton.setAttribute('id', 'previousButton');
+                  previousButton.className = "thumbnailButton";
+                  previousButton.textContent = '<';
+                  const previousButtonContainer = document.createElement('div');
+                  previousButtonContainer.setAttribute('id', 'previousButtonContainer');
+                  previousButtonContainer.className = "thumbnailButtonContainer";
+                  previousButton.addEventListener('click', () => {
+                    previousPage(data);
+                  });
+                  previousButtonContainer.appendChild(previousButton);
+                  thumbnailsContainer.insertBefore(previousButtonContainer, thumbnailsContainer.firstChild);
+                  previousButtonContainer.style.opacity = currentPage > 1 ? 1 : 0;
+                  
+                  // Add next previous button
+                  const nextButton = document.createElement(tagName = 'button');
+                  nextButton.setAttribute('id', 'nextButton');
+                  nextButton.className = "thumbnailButton";
+                  nextButton.textContent = '>';
+                  const nextButtonContainer = document.createElement('div');
+                  nextButtonContainer.setAttribute('id', 'nextButtonContainer');
+                  nextButtonContainer.className = "thumbnailButtonContainer"
+                  nextButton.addEventListener('click', () => {
+                    nextPage(data);
+                  });
+                  nextButtonContainer.appendChild(nextButton);
+                  thumbnailsContainer.appendChild(nextButtonContainer);
+                  nextButtonContainer.style.opacity = currentPage < maxPage ? 1 : 0;
+                })
+                .catch(error => console.error('Error fetching images:', error))
+            </script>
+        <tr>
+          <td align="left"><span class="style6 style13">Dernière mise à jour 11/02/2024</span></td>
+        </tr>
+        </td>
+        </tr>
+      </table>
+    </div>
+
+
+  </div>
+</body>
+
+</html>
