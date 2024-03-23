@@ -69,13 +69,13 @@ ul, ol {
 }
 li {
 	margin: 0;
-	padding: 0;
+	padding: 20;
 }
 
 /* Paragraphes */
 p {
 	margin: .75em 0;
-	font-size: 0.8em;
+	font-size: 1em;
 }
 li p, blockquote p {
 	margin: .5em 0;
