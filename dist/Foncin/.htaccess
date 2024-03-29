@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Veuillez entrer votre identifiant"
-AuthUserFile ../cgi-bin/.htpasswd
-Require valid-user

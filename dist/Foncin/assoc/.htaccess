@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Zone protégée - Veuillez entrer votre identifiant"
+AuthUserFile /mnt/rid/52/46/51955246/htdocs/Foncin/assoc/.htpasswd
+Require valid-user
