@@ -19,7 +19,6 @@ body {
 	padding: 0;
 	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
 	color: #000000;
-	background-image: url("../Media/Waves_BKGR.jpg")
 }
 .oneColElsCtr #container {
 	width: 72em;
@@ -27,6 +26,7 @@ body {
 	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
 	border: 0px solid #000000;
 	text-align: left; /* this overrides the text-align: center on the body element. */
+	min-height: 100vh;
 }
 .oneColElsCtr #mainContent {
 	padding: 0 0px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
@@ -75,7 +75,7 @@ li {
 /* Paragraphes */
 p {
 	margin: .75em 0;
-	font-size: 0.8em;
+	font-size: 1em;
 }
 li p, blockquote p {
 	margin: .5em 0;

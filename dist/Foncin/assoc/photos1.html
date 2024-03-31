@@ -5,7 +5,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="language" content="fr" />
-  <title>Foncin</title>
+  <title>Photos Foncin</title>
   <link href="../../Styles/base.css" rel="stylesheet" type="text/css" />
   <link href="../../Styles/photos.css" rel="stylesheet" type="text/css" />
   <link href="../../Styles/VBCFP11.css" rel="stylesheet" type="text/css" />
@@ -17,27 +17,35 @@
 
     <table width="100%" border="0" cellpadding="0" bgcolor="#3300CC">
       <tr>
-        <td><div align="center"><img src="images/Foncin_banner.jpg" alt="Foncin banner" width="1148" height="280" /></div></td>
+        <td><div align="center"><img src="images/photos_banner.jpg" alt="Photos banner" width="1148" height="120" /></div></td>
       </tr>
     </table>
 
-    <table cellpadding="0" bordercolor="#3300FF" border="2" bgcolor="#3366FF" align="center" width="100%">
-      <tbody>
-        <tr>
-          <td><div align="center"><a href="../../index.html" class="style3 style13">Home</a></div></td>
-          <td><div align="center"><a href="../../nous.html" class="style14">Nous</a></div></td>
-          <td><div align="center"><a href="../../voyages.html" class="style14">Voyages</a></div></td>
-          <td><div align="center"><a href="../../fetes.html" class="style14">Fêtes</a></div></td>
-          <td><div align="center"><a href="../../albums.html" class="style14">Albums</a></div></td>
-          <td><div align="center"><a href="../../hugo.html" class="style14">Hugo</a></div></td>
-          <td><div align="center"><a href="http://www.volleyprevessin.fr" class="style14">Volley</a></div></td>
-          <td><div align="center"><a href="https://cern-scuba-club.vpdive.com/w/accueil" class="style14">Plongée</a></div></td>
-          <td><div align="center"><a href="../../contact.html" class="style14">Contacts</a></div></td>
-        </tr>
-      </tbody>
-    </table>
+    <!-- InstanceBeginEditable name="Menu" -->
+    <table width="1148" height="m"   border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+      <tr>
+        <td><div id="navigation">
+            <ul>
+              <li class="gauche"><a href="index.html">Accueil</a></li>
+              <li class="gauche">-</li>           
+              <li class="gauche"><a href="conservatoire.html">Le Conservatoire du Littoral</a></li>
+              <li class="gauche">-</li>     
+              <li class="gauche"><a href="maison.html">Le Casteu dou Soleu</a></li>
+              <li class="gauche">-</li>
+              <li class="gauche"><a href="foncin.html">Pierre Foncin</a></li>
+              <li class="gauche">-</li>                   
+              <li class="gauche"><a href="visites.html">Les visites</a></li>
+              <li class="gauche">-</li>       
+              <li class="gauche"><a href="association.html">L'APF</a></li>
+              <li class="gauche">-</li>   
+              <li class="droite"><a href="contacts.html">Contacts & remerciements</a></li>
+            </ul>
+        </div></td>
+      </tr>
+  </table>
+    <!-- #navigation -->
 
-    <a onclick="history.back()" class="backButton"><img src="/Media/classic_home_button.jpg"/></a>
+    <a onclick="history.back()" class="backButton"><img src="images/up.gif"/></a>
     <div align="center" class="oneColElsCtr">
       <table width="100%" border="0" align="center" cellpadding="2" bgcolor="#99CCFF">
         <tr>
@@ -157,7 +165,7 @@
                 window.open(enlargedImgContent.src);
               });
 
-              fetch('maxi/photos.json') // Replace with the actual path to your JSON file
+              fetch('maxi1/photos.json') // Replace with the actual path to your JSON file
                 .then(response => response.json())
                 .then(data => {
                   data.images.forEach(img => {
@@ -212,7 +220,7 @@
                 .catch(error => console.error('Error fetching images:', error))
             </script>
         <tr>
-          <td align="left"><span class="style6 style13">Dernière mise à jour 11/02/2024</span></td>
+          <td align="left"><span class="style6 style13">Dernière mise à jour 31/03/2024</span></td>
         </tr>
         </td>
         </tr>
