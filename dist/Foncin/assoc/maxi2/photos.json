@@ -1,6 +1,14 @@
 {
   "images": [
     {
+      "filename": "/Foncin/assoc/maxi2/1866-Acte_mariage_Pierre_Anne.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/Foncin/assoc/maxi2/1866-Acte_mariage_Pierre_Anne_partiel.jpg",
+      "page": 1
+    },
+    {
       "filename": "/Foncin/assoc/maxi2/1866-Acte_mariage_Pierre_Anne_Silvestre.jpg",
       "page": 1
     },
@@ -26,11 +34,11 @@
     },
     {
       "filename": "/Foncin/assoc/maxi2/1887-Acte_mariage_Antoinette_JB_Passerieux.jpg",
-      "page": 1
+      "page": 2
     },
     {
       "filename": "/Foncin/assoc/maxi2/1887-Acte_mariage_Antoinette_Passerieux.jpg",
-      "page": 1
+      "page": 2
     },
     {
       "filename": "/Foncin/assoc/maxi2/1887-Obseques_Anna_Sylvestre-Courrier_de_l'Aude.jpg",
@@ -58,11 +66,11 @@
     },
     {
       "filename": "/Foncin/assoc/maxi2/1895-Acte_naissance_Mireille_Foncin.jpg",
-      "page": 2
+      "page": 3
     },
     {
       "filename": "/Foncin/assoc/maxi2/1896-Annonce_deces_Marie_Cazeaux.jpg",
-      "page": 2
+      "page": 3
     },
     {
       "filename": "/Foncin/assoc/maxi2/1916-Acte_deces_Pierre_Foncin.jpg",
@@ -90,7 +98,7 @@
     },
     {
       "filename": "/Foncin/assoc/maxi2/1977-Myriem_Foncin-carriere.jpg",
-      "page": 3
+      "page": 4
     }
   ]
 }
