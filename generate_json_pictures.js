@@ -4,9 +4,19 @@ const path = require('path');
 const paths = [
   
   {
-    folderPath: 'dist/Fetes/NAChinois2008/maxi/',
-    jsonFilePath: 'dist/Fetes/NAChinois2008/maxi/photos.json',
-    filename: '/Fetes/NAChinois2008/maxi/'
+    folderPath: 'dist/Fetes/NAC2009/maxi/',
+    jsonFilePath: 'dist/Fetes/NAC2009/maxi/photos.json',
+    filename: '/Fetes/NAC2009/maxi/'
+  }, 
+  {
+    folderPath: 'dist/Fetes/Gruez2008/maxi/',
+    jsonFilePath: 'dist/Fetes/Gruez2008/maxi/photos.json',
+    filename: '/Fetes/Gruez2008/maxi/'
+  },
+  {
+    folderPath: 'dist/Fetes/NAC2008/maxi/',
+    jsonFilePath: 'dist/Fetes/NAC2008/maxi/photos.json',
+    filename: '/Fetes/NAC2008/maxi/'
   },
   {
     folderPath: 'dist/Fetes/SuperGG07/maxi/',
