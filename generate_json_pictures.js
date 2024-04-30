@@ -3,6 +3,22 @@ const path = require('path');
 
 const paths = [
   
+ 
+  {
+    folderPath: 'dist/Fetes/Metal2012/maxi/',
+    jsonFilePath: 'dist/Fetes/Metal2012/maxi/photos.json',
+    filename: '/Fetes/Metal2012/maxi/'
+  }, 
+  {
+    folderPath: 'dist/Fetes/Africaine2010/maxi/',
+    jsonFilePath: 'dist/Fetes/Africaine2010/maxi/photos.json',
+    filename: '/Fetes/Africaine2010/maxi/'
+  },
+  {
+    folderPath: 'dist/Fetes/Mechoui2009/maxi/',
+    jsonFilePath: 'dist/Fetes/Mechoui2009/maxi/photos.json',
+    filename: '/Fetes/Mechoui2009/maxi/'
+  },
   {
     folderPath: 'dist/Fetes/NAC2009/maxi/',
     jsonFilePath: 'dist/Fetes/NAC2009/maxi/photos.json',

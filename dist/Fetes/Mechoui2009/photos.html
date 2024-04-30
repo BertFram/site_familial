@@ -5,19 +5,19 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="language" content="fr" />
-  <title>Mechoui 2006.html</title>
+  <title>Mechoui 2009</title>
   <link href="../../Styles/base.css" rel="stylesheet" type="text/css" />
   <link href="../../Styles/photos.css" rel="stylesheet" type="text/css" />
   <link href="../../Styles/VBCFP11.css" rel="stylesheet" type="text/css" />
   <style type="text/css"></style>
 </head>
 
-<body class="oneColElsCtr background3">
+<body class="oneColElsCtr background1">
   <div id="container">
 
     <table width="100%" border="0" cellpadding="0" bgcolor="#3300CC">
       <tr>
-        <td><div align="center"><img src="images/photos_banner.jpg" alt="Photo_banner" width="1148" height="120" /></div></td>
+        <td><div align="center"><img src="images/Mechoui2009_banner.jpg" alt="Mechoui 2009 banner" width="1148" height="120" /></div></td>
       </tr>
     </table>
 
@@ -37,7 +37,7 @@
       </tbody>
     </table>
 
-    <a onclick="history.back()" class="backButton"><img src="images/home.gif"/></a>
+    <a onclick="history.back()" class="backButton"><img src="/Media/classic_home_button.jpg"/></a>
     <div align="center" class="oneColElsCtr">
       <table width="100%" border="0" align="center" cellpadding="2" bgcolor="#99CCFF">
         <tr>
@@ -93,7 +93,7 @@
                   img.addEventListener('click', function () {
                     enlargedImgContent.src = this.src;
                     enlargedImgContainer.style.display = 'flex';
-                    thumbnailsContainer.style.marginTop = '5px';                    
+                    thumbnailsContainer.style.marginTop = '5px';
                     for (var i = 0; i < data.images.length; i++) {
                       if (data.images[i].filename == image.filename) {
                         currentImage = i;
@@ -152,6 +152,11 @@
                 }
               };
 
+              // Open image in large format in a new tab
+              enlargedImgContent.addEventListener('click', function () {
+                window.open(enlargedImgContent.src);
+              });
+
               fetch('maxi/photos.json') // Replace with the actual path to your JSON file
                 .then(response => response.json())
                 .then(data => {
@@ -207,7 +212,7 @@
                 .catch(error => console.error('Error fetching images:', error))
             </script>
         <tr>
-          <td align="left"><span class="style6 style13">Dernière mise à jour 29/01/2024</span></td>
+          <td align="left"><span class="style6 style13">Dernière mise à jour 11/02/2024</span></td>
         </tr>
         </td>
         </tr>
