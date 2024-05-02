@@ -1,11 +1,11 @@
 {
   "images": [
     {
-      "filename": "/Fetes/Mechoui2006/maxi/01-Sam & Thomas.jpg",
+      "filename": "/Fetes/Mechoui2006/maxi/01-Sam et Thomas.jpg",
       "page": 1
     },
     {
-      "filename": "/Fetes/Mechoui2006/maxi/02-Deux Valéries.jpg",
+      "filename": "/Fetes/Mechoui2006/maxi/02-Deux Valeries.jpg",
       "page": 1
     },
     {
@@ -37,7 +37,11 @@
       "page": 2
     },
     {
-      "filename": "/Fetes/Mechoui2006/maxi/10-Hugo & Amandine Tr.jpg",
+      "filename": "/Fetes/Mechoui2006/maxi/10-Hugo et Amandine Tr.jpg",
+      "page": 2
+    },
+    {
+      "filename": "/Fetes/Mechoui2006/maxi/11.jpg",
       "page": 2
     },
     {
@@ -49,27 +53,43 @@
       "page": 2
     },
     {
+      "filename": "/Fetes/Mechoui2006/maxi/12.jpg",
+      "page": 2
+    },
+    {
       "filename": "/Fetes/Mechoui2006/maxi/12a-Maude.jpg",
       "page": 2
     },
     {
-      "filename": "/Fetes/Mechoui2006/maxi/12b-Clément.jpg",
+      "filename": "/Fetes/Mechoui2006/maxi/12b-Clement.jpg",
       "page": 2
     },
     {
-      "filename": "/Fetes/Mechoui2006/maxi/13-Clément & Amandine.jpg",
-      "page": 2
-    },
-    {
-      "filename": "/Fetes/Mechoui2006/maxi/14-Clément & Alizée.jpg",
-      "page": 2
-    },
-    {
-      "filename": "/Fetes/Mechoui2006/maxi/15-Alizée.jpg",
+      "filename": "/Fetes/Mechoui2006/maxi/13-Clement et Amandine.jpg",
       "page": 3
     },
     {
-      "filename": "/Fetes/Mechoui2006/maxi/16-Al & Marine.jpg",
+      "filename": "/Fetes/Mechoui2006/maxi/13.jpg",
+      "page": 3
+    },
+    {
+      "filename": "/Fetes/Mechoui2006/maxi/14-Clement et Alizee.jpg",
+      "page": 3
+    },
+    {
+      "filename": "/Fetes/Mechoui2006/maxi/14.jpg",
+      "page": 3
+    },
+    {
+      "filename": "/Fetes/Mechoui2006/maxi/15-Alizee.jpg",
+      "page": 3
+    },
+    {
+      "filename": "/Fetes/Mechoui2006/maxi/15.jpg",
+      "page": 3
+    },
+    {
+      "filename": "/Fetes/Mechoui2006/maxi/16-Al et Marine.jpg",
       "page": 3
     },
     {
@@ -78,26 +98,26 @@
     },
     {
       "filename": "/Fetes/Mechoui2006/maxi/18a-A table 10.jpg",
-      "page": 3
+      "page": 4
     },
     {
-      "filename": "/Fetes/Mechoui2006/maxi/18b-Marine & viande.jpg",
-      "page": 3
+      "filename": "/Fetes/Mechoui2006/maxi/18b-Marine et viande.jpg",
+      "page": 4
     },
     {
       "filename": "/Fetes/Mechoui2006/maxi/19-Uruguay.jpg",
-      "page": 3
+      "page": 4
     },
     {
       "filename": "/Fetes/Mechoui2006/maxi/20-Trois sous tente.jpg",
-      "page": 3
+      "page": 4
     },
     {
       "filename": "/Fetes/Mechoui2006/maxi/21-Florence.jpg",
-      "page": 3
+      "page": 4
     },
     {
-      "filename": "/Fetes/Mechoui2006/maxi/22-JC & co.jpg",
+      "filename": "/Fetes/Mechoui2006/maxi/22-JC et co.jpg",
       "page": 4
     },
     {
@@ -105,31 +125,31 @@
       "page": 4
     },
     {
-      "filename": "/Fetes/Mechoui2006/maxi/24-Trudi & JCC.jpg",
+      "filename": "/Fetes/Mechoui2006/maxi/24-Trudi et JCC.jpg",
       "page": 4
     },
     {
-      "filename": "/Fetes/Mechoui2006/maxi/25-Al & Marine dansant.jpg",
-      "page": 4
+      "filename": "/Fetes/Mechoui2006/maxi/25-Al et Marine dansant.jpg",
+      "page": 5
     },
     {
-      "filename": "/Fetes/Mechoui2006/maxi/26-Anne & JP.jpg",
-      "page": 4
+      "filename": "/Fetes/Mechoui2006/maxi/26-Anne et JP.jpg",
+      "page": 5
     },
     {
       "filename": "/Fetes/Mechoui2006/maxi/27-Alberto_bas.jpg",
-      "page": 4
+      "page": 5
     },
     {
       "filename": "/Fetes/Mechoui2006/maxi/28-Ray_bas.jpg",
-      "page": 4
+      "page": 5
     },
     {
-      "filename": "/Fetes/Mechoui2006/maxi/29-JPL & Bertrand.jpg",
-      "page": 4
+      "filename": "/Fetes/Mechoui2006/maxi/29-JPL et Bertrand.jpg",
+      "page": 5
     },
     {
-      "filename": "/Fetes/Mechoui2006/maxi/30-Adrian & Hugo.jpg",
+      "filename": "/Fetes/Mechoui2006/maxi/30-Adrian et Hugo.jpg",
       "page": 5
     },
     {
@@ -142,19 +162,31 @@
     },
     {
       "filename": "/Fetes/Mechoui2006/maxi/33-Dimanche midi 1.jpg",
-      "page": 5
+      "page": 6
     },
     {
       "filename": "/Fetes/Mechoui2006/maxi/34-Dimanche midi 2.jpg",
-      "page": 5
+      "page": 6
     },
     {
       "filename": "/Fetes/Mechoui2006/maxi/35-Dimanche midi 3.jpg",
-      "page": 5
+      "page": 6
     },
     {
       "filename": "/Fetes/Mechoui2006/maxi/36-Dimanche midi Alice.jpg",
-      "page": 5
+      "page": 6
+    },
+    {
+      "filename": "/Fetes/Mechoui2006/maxi/Florence.jpg",
+      "page": 6
+    },
+    {
+      "filename": "/Fetes/Mechoui2006/maxi/Valerie et Amandine.jpg",
+      "page": 6
+    },
+    {
+      "filename": "/Fetes/Mechoui2006/maxi/Valerie.jpg",
+      "page": 6
     }
   ]
 }
