@@ -5,14 +5,14 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="language" content="fr" />
-  <title>Socorro 2017</title>
+  <title>photos</title>
   <link href="../../Styles/base.css" rel="stylesheet" type="text/css" />
   <link href="../../Styles/photos.css" rel="stylesheet" type="text/css" />
   <link href="../../Styles/VBCFP11.css" rel="stylesheet" type="text/css" />
   <style type="text/css"></style>
 </head>
 
-<body class="oneColElsCtr background3">
+<body class="oneColElsCtr background1">
   <div id="container">
 
     <table width="100%" border="0" cellpadding="0" bgcolor="#3300CC">
@@ -37,7 +37,7 @@
       </tbody>
     </table>
 
-    <a onclick="history.back()" class="backButton"><img src="../Media/up.gif"/></a>
+    <a onclick="history.back()" class="backButton"><img src="/Media/classic_home_button.jpg"/></a>
     <div align="center" class="oneColElsCtr">
       <table width="100%" border="0" align="center" cellpadding="2" bgcolor="#99CCFF">
         <tr>
@@ -151,6 +151,11 @@
                   updateButtonsVisibility();
                 }
               };
+
+              // Open image in large format in a new tab
+              enlargedImgContent.addEventListener('click', function () {
+                window.open(enlargedImgContent.src);
+              });
 
               fetch('maxi1/photos.json') // Replace with the actual path to your JSON file
                 .then(response => response.json())
